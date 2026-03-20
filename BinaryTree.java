@@ -1,5 +1,3 @@
-import org.w3c.dom.Node;
-
 public class BinaryTree<E extends Comparable<E>> {
     private Node<E> root;
     private static class Node<E> {

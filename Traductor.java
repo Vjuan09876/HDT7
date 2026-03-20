@@ -15,13 +15,13 @@ public class Traductor {
         } catch (FileNotFoundException e) {
             System.out.println("no se encontro el archivo");
         }
-        System.out.println("ordenado, In-order");
+        System.out.println("ordenado, In order");
         dictionaryTree.inOrder();
         System.out.println("\ntraduccion");
         try (Scanner sc = new Scanner(new File("texto.txt"))) {
             while (sc.hasNext()) {
                 String word = sc.next();
-                String cleanWord = word.replaceAll("[^a-zA-Z]", "").toLowerCase();
+                String cleanWord = word.replaceAll("^a-zA-Z", "").toLowerCase();
                 
                 Association<String, String> searchResult = 
                     dictionaryTree.search(new Association<>(cleanWord, ""));

@@ -1,8 +1,8 @@
 public class Association <K extends Comparable<K>, V> implements Comparable<Association<K, V>> {
-    Private K Key;
-    Private V Value;
+    private K Key;
+    private V Value;
 
-    Public Associaation(K key, V value) {
+    public Associaation(K key, V value) {
         this.key = key;
         this.value = value;
     }
